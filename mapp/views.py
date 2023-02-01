@@ -307,15 +307,16 @@ def payment(request, id):
         a = paymentform(request.POST)
         if a.is_valid():
             pn = a.cleaned_data['pname']
+            pr = a.cleaned_data['price']
             fn = a.cleaned_data['fname']
             ad = a.cleaned_data['address']
             em = a.cleaned_data['email']
             nm = a.cleaned_data['number']
             pm = a.cleaned_data['paymode']
-            b = paymentmodel(pname=pn, fname=fn, address=ad, email=em, number=nm, paymode=pm)
+            b = paymentmodel(pname=pn, price=pr, fname=fn, address=ad, email=em, number=nm, paymode=pm)
             b.save()
             subject = f"Order Placed for {pn}"
-            message = f"hello {fn}\n your order for {pn} is placed successfully. Expect delivery within next week"
+            message = f"hello {fn}\n your order for {pn} is placed successfully. Expect delivery within next week\n\n Order Details:\n Product Name: {pn}\n MRP: {pr} INR\n Customer Details:\n Name: {fn}\n Address: {ad}\n Number: {nm}\n Payment Mode: {pm}"
             email_from = EMAIL_HOST_USER
             send_mail(subject, message, email_from, [em])
             return render(request, 'ordersuccess.html')

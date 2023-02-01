@@ -25,18 +25,16 @@
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
-    <div class="container-fluid" style="margin-left: 120px; height:70px;">
-        <b><a class="navbar-brand" style="font-family: Audiowide, sans-serif" href="#"><i>StarkX</i></a></b>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search for products, brands and more"
-                   aria-label="Search" style="width: 500px;">
-             <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container-fluid" style="margin-left: 150px;">
+            <b><a class="navbar-brand" style="font-family: Audiowide, sans-serif" href="http://127.0.0.1:8000/webapp/index/"><i>StarkX</i></a></b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search for products, brands and more" aria-label="Search" style="width: 500px;">
+                <!-- <button class="btn btn-outline-light" type="submit">Search</button> -->
+            </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 150px;">
                 <li class="nav-item">
                     <a class="nav-link active me-5" href="#"><b><i>Build For You</i></b></a>
@@ -53,13 +51,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
                         </li>
                         <li><a class="dropdown-item" href="#">Download App</a></li>
                     </ul>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping me-2"></i><b>Cart</b></a>
                 </li>
-                </li>
             </ul>
-        </div>
-        <button class="btn mt-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="color: white; margin-right: 50px;"><i class="fa-solid fa-bars"></i></button>
+                    <button class="btn mt-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="color: white; margin-right: 50px;"><i class="fa-solid fa-bars"></i></button>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: black;">
   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color:white"></button>
@@ -79,15 +76,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
       </center>
   </div>
 </div>
+        </div>
     </div>
-</nav>
+    </nav>
 <body style="background: black;">
 <h1 align="center" style=" color: white; background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); font-family: Audiowide, sans-serif">{{cmp}}</h1>
-<div class="container mt-5 mb-3" style="margin-left: 140px;">
+<div class="container mt-5 mb-3">
     <div class="row">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="https://s.yimg.com/uu/api/res/1.2/Jk78WQWFeUiy2gh2mUHT6g--~B/Zmk9ZmlsbDtoPTUyNTt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-10/5ed6ef20-4a40-11ed-afe6-e08a47b9779b.cf.webp" class="card-img-top" alt="..." style="height: 191px;">
+        <div class="col-lg-4 col-md-4 col-sm-10">
+            <div class="card" style="width: 100%;">
+                <img src="https://s.yimg.com/uu/api/res/1.2/Jk78WQWFeUiy2gh2mUHT6g--~B/Zmk9ZmlsbDtoPTUyNTt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-10/5ed6ef20-4a40-11ed-afe6-e08a47b9779b.cf.webp" class="card-img-top" alt="..." style="height: 277px;">
                 <div class="card-body">
 <!--                    <h5 class="card-title">Card title</h5>-->
 <!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
@@ -97,9 +95,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
             </div>
 
         </div>    <!--col -->
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1636206145366-0390be0e16a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&h=780&q=80" class="card-img-top" alt="...">
+        <div class="col-lg-4 col-md-4 col-sm-10">
+            <div class="card" style="width: 100%;">
+                <img src="https://images.unsplash.com/photo-1636206145366-0390be0e16a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&h=780&q=80" class="card-img-top" alt="..." style="height: 277px;">
                 <div class="card-body">
 <!--                    <h5 class="card-title">Card title</h5>-->
 <!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
@@ -109,9 +107,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
             </div>
 
         </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&h=310&q=80" class="card-img-top" alt="...">
+        <div class="col-lg-4 col-md-4 col-sm-10">
+            <div class="card" style="width: 100%;">
+                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&h=310&q=80" class="card-img-top" alt="..." style="height: 277px;">
                 <div class="card-body">
 <!--                    <h5 class="card-title">Card title</h5>-->
 <!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->

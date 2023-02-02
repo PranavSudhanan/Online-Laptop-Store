@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class userregform(forms.ModelForm):
     class Meta:
         model = User
-        fields = ['username', 'email', 'password']
+        fields = '__all__'
 
 class userlogform(forms.Form):
     email = forms.EmailField()

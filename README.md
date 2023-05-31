@@ -1,2 +1,2 @@
 # Online-Laptop-Store
-E-commerce website build using python
+Single vendor -commerce website build using python
